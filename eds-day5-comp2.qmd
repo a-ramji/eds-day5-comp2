@@ -1,0 +1,13 @@
+---
+title: "eds 212 day 5 comp 2"
+format: html
+editor: visual
+execute: 
+  warning: false
+---
+
+## Last Quarto Document & Project in EDS212 !!
+
+```{r}
+library(tidyverse)
+```
