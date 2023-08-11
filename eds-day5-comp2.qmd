@@ -89,3 +89,10 @@ ggplot(data = mtcars, aes(x = wt, y = mpg)) +
   labs(x = "Car Weight (1000 pounds)", y = "Gas mileage (mpg)", title = "Car weight efficiency relationship") +
   theme_minimal()
 ```
+
+```{r}
+ggplot(data = mtcars, aes(x = mpg, y = hp)) +
+  geom_point(aes(size = mpg, color = hp)) +
+  labs(x = "Gas mileage (mpg)", y = "Car Weight horsepower", title = "Car horsepower and efficiency relationship") +
+  theme_minimal()
+```
