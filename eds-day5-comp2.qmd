@@ -11,3 +11,72 @@ execute:
 ```{r}
 library(tidyverse)
 ```
+
+## Boolean
+
+Some logical operators
+
+-   == (does this match?)
+
+    -   = (this is this value --- not logical operator!)
+
+-   != (do these NOT match?)
+
+-   \>, \<, \>=, \<=
+
+-   &, \| , (and, or)
+
+```{r}
+# does 4 match 5
+
+4 == 5
+```
+
+```{r}
+# does 4 match 4
+4 == 4
+
+```
+
+```{r}
+# does 4 NOT match 5
+4 != 5
+```
+
+```{r}
+# does 4 match "4"
+# (loose equality operator, in js 4 === "4" is false, == is true)
+4 == "4"
+```
+
+```{r}
+# with assigned variables
+
+cat <- 10
+dog <- 7
+
+cat > dog
+```
+
+```{r}
+# is cat greater than or equal to dog?
+cat >= dog
+```
+
+```{r}
+# Is dog greater than cat, OR is cat less than 20?
+
+dog > cat | cat < 20
+```
+
+```{r}
+# is dog less than cat AND cat == 10
+
+dog < cat & cat == 10
+```
+
+follows PEMDAS, still can (and maybe should) use parentheses :)
+
+```{r}
+dog < cat & cat > 2 & 4 >= dog
+```
