@@ -80,3 +80,12 @@ follows PEMDAS, still can (and maybe should) use parentheses :)
 ```{r}
 dog < cat & cat > 2 & 4 >= dog
 ```
+
+## first bubble chart! using mtcars
+
+```{r}
+ggplot(data = mtcars, aes(x = wt, y = mpg)) +
+  geom_point(aes(size = mpg, color = wt)) +
+  labs(x = "Car Weight (1000 pounds)", y = "Gas mileage (mpg)", title = "Car weight efficiency relationship") +
+  theme_minimal()
+```
